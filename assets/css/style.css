@@ -1,0 +1,397 @@
+/* General Body & Font Styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #e5e6ed;
+    margin: 0;
+    color: #222;
+    min-height: 100vh;
+}
+
+/* Form Styles (Login & Signup) */
+.form-container {
+    max-width: 430px;
+    margin: 60px auto;
+    padding: 36px 32px 32px 32px;
+    background: #b1b5c0;
+    border-radius: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    border: none;
+}
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    color: #111;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #111;
+    font-size: 1.08rem;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="date"] {
+    width: 100%;
+    padding: 14px 12px;
+    border: 1.5px solid #0d3e7a;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: #fff;
+    font-size: 1rem;
+    color: #222;
+    transition: border 0.2s;
+}
+/* Add focus style for input fields */
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus,
+.form-group input[type="date"]:focus {
+    border-color: #1886ff;
+    outline: none;
+    background: #f7faff;
+}
+.form-group input[type="file"] {
+    padding: 5px;
+}
+.password-group {
+    display: flex;
+    gap: 20px;
+}
+.password-group > div {
+    flex: 1;
+}
+.btn-primary {
+    width: 120px;
+    padding: 12px 0;
+    background: #1886ff;
+    border: none;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0;
+    transition: background 0.2s;
+}
+.btn-primary:hover {
+    background: #0f6cd6;
+}
+.form-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.form-link a {
+    color: #1886ff;
+    text-decoration: underline;
+    font-weight: 400;
+}
+.error-box, .success-box {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+.error-box {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+.success-box {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Profile Page Styles */
+.main-header {
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    box-shadow: none;
+}
+.logout-btn {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 6px 28px;
+    border-radius: 12px;
+    background-color: #078fff;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.4rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    margin-left: 35vw;
+}
+.profile-container {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 32px;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.profile-sidebar {
+    flex: 0 0 260px;
+    min-width: 260px;
+    margin-top: 0;
+}
+.user-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 28px 0 18px 0;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    border: none;
+    margin-bottom: 18px;
+    min-width: 240px;
+}
+.profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 2.5px solid #e5e6ed;
+}
+.post-feed {
+    flex: 1;
+    min-width: 0;
+    margin-top: 0;
+}
+.post-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 18px 18px 12px 18px;
+    margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    border: none;
+}
+.add-post-form textarea {
+    width: 100%;
+    min-height: 70px;
+    border: 1.5px solid #bfc7d1;
+    border-radius: 8px;
+    padding: 14px 12px;
+    resize: vertical;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    color: #222;
+    background: #fff;
+    margin-bottom: 12px;
+}
+.add-post-form .form-actions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.add-post-form input[type="file"] {
+    display: none;
+}
+.btn-secondary {
+    width: 120px;
+    padding: 12px 0;
+    background-color: #e4e6eb;
+    border-radius: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #222;
+    border: none;
+    margin: 0;
+    text-align: center;
+}
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.post-author-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.post-header div {
+    display: flex;
+    flex-direction: column;
+}
+.post-header strong {
+    font-size: 15px;
+}
+.post-header small {
+    color: #65676b;
+    font-size: 13px;
+}
+.delete-post-btn {
+    margin-left: auto;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #65676b;
+}
+.post-description {
+    margin: 15px 0;
+}
+.post-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.post-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    border-top: 1px solid #e9ebee;
+    padding-top: 10px;
+}
+.post-actions button {
+    flex: 1;
+    background-color: #f0f2f5;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.post-actions button:hover {
+    background-color: #e4e6eb;
+}
+
+.post-actions button.active {
+    background-color: #1877f2;
+    color: white;
+}
+
+.post-actions .like-btn.active {
+    background-color: #42a5f5;
+}
+
+.post-actions .dislike-btn.active {
+    background-color: #ef5350;
+}
+
+/* Profile Editing Styles */
+.profile-pic-container {
+    position: relative;
+    display: inline-block;
+}
+
+.edit-profile-pic-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: #1877f2;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.editable-name, .editable-age {
+    margin: 10px 0;
+}
+
+.edit-profile-btn {
+    margin-top: 15px;
+    width: 100%;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* No Posts Message */
+.no-posts-message {
+    text-align: center;
+    padding: 40px 20px;
+    color: #65676b;
+}
+
+.no-posts-message p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        margin: 10px;
+    }
+    
+    .profile-sidebar {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .post-feed {
+        flex: none;
+        width: 100%;
+    }
+    
+    .main-header {
+        padding: 10px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
